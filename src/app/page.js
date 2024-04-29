@@ -5,7 +5,7 @@ import 'react-h5-audio-player/lib/styles.css';
 import { useState } from 'react';
 
 
-const page = () => {
+const Page = () => {
 
     const nextTrack = () => {
       const ranNum = Math.floor(Math.random() * 8+1);
@@ -85,7 +85,7 @@ const page = () => {
     </>)
 }
 
-export default page
+export default Page
 
 
 
