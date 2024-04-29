@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 
 const Page = () => {
@@ -28,23 +29,59 @@ const Page = () => {
     console.log(currentTrack);
   }
 
-  return (
-    <div >
+  return (<>
+    <div className='mx-auto w-1/2'>
       <AudioPlayer
         src={currentTrack}
-        showSkipControls={false}
         showJumpControls={false}
+        customAdditionalControls={[]}
         onEnded={handleTrackEnd} // Call handleTrackEnd function when track ends
         autoPlayAfterSrcChange={true}
         
         // other props here
         
       />
-      <p>Track</p>
-      <p>{currentTrack}</p>
+      {/* <p>Track</p> */}
+      {/* <p>{currentTrack}</p> */}
       <p>{currentHour}</p>
     </div>
-  );
+    <div className="flex justify-center">
+  <table className="table w-1/2">
+    {/* head */}
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Favorite Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      {/* row 1 */}
+      <tr className="bg-gray-200">
+        <th>1</th>
+        <td>Cy Ganderton</td>
+        <td>Quality Control Specialist</td>
+        <td>Blue</td>
+      </tr>
+      {/* row 2 */}
+      <tr>
+        <th>2</th>
+        <td>Hart Hagerty</td>
+        <td>Desktop Support Technician</td>
+        <td>Purple</td>
+      </tr>
+      {/* row 3 */}
+      <tr>
+        <th>3</th>
+        <td>Brice Swyre</td>
+        <td>Tax Accountant</td>
+        <td>Red</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </>);
 };
 
 export default Page;
