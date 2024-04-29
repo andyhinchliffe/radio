@@ -30,7 +30,7 @@ const page = () => {
         customAdditionalControls={[]} customVolumeControls={[]} className="rounded-xl" />
     </div>
     <div className="dropdown dropdown-hover">
-  <div tabIndex={0} role="button" className="mt-32 text-sm text-[#b4996e]">Current Show - The Lo fi Showcase</div>
+  <div tabIndex={0} role="button" className=" text-sm text-[#b4996e]">Current Show - The Lo fi Showcase</div>
   
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52 text-sm">
     {/* <li> Up Next - The Beats Show</li> */}
