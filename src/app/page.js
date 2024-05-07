@@ -44,9 +44,10 @@ const Page = () => {
 
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
-    <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-fixed  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
+    <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
     <div></div>
-    <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10"><div>Focus Beats<div className="text-base mr-4">24 Hour Focus Beats - Click to Listen</div>
+    <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
+    <div>{!isOpen? <div>FOCUS BEATS</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Focus Beats - Click to Listen</div> : null}</div>
     
     
     <div className="flex">
@@ -62,7 +63,7 @@ const Page = () => {
     <li ><a onClick={() => setIsOpen(!isOpen)}>Full Timetable</a></li>
   </ul>
   </div>{isOpen? <div className="overflow-x-auto">
-  <table className=" text-slate-800 table mt-10">
+  <table className="table-sm text-slate-800 table mt-10">
     {/* head */}
     <thead>
       <tr>
