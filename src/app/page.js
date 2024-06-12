@@ -45,7 +45,7 @@ const Page = () => {
 
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
-  <GoogleAnalytics gaId="G-R0Y4M12C9B" />
+  <GoogleAnalytics gaId="G-YQF0JRV3XF" />
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
     <div></div>
     <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
