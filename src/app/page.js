@@ -2,6 +2,7 @@
 import React from 'react'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { useState } from 'react';
 
@@ -31,7 +32,7 @@ const Page = () => {
       
       
 
-      const ranNum = Math.floor(Math.random() * 9+1);
+      const ranNum = Math.floor(Math.random() * 25+1);
       setPath(`./audio/lofi128/track${ranNum}.mp3`);
       console.log(path);
       console.log(hour)
@@ -44,10 +45,11 @@ const Page = () => {
 
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
+  <GoogleAnalytics gaId="G-R0Y4M12C9B" />
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
     <div></div>
     <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
-    <div>{!isOpen? <div>FOCUS BEATS</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Focus Beats - Click to Listen</div> : null}</div>
+    <div>{!isOpen? <div>FOCUS RADIO</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Focus Beats - Click to Listen</div> : null}</div>
     
     
     <div className="flex">

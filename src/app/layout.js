@@ -1,10 +1,11 @@
 import SpaceMono from "next/font/google";
 import "./globals.css";
 
+
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Focus Beats",
+  title: "Focus Radio",
   description: "Experience the soothing rhythms of boom bap lofi 24/7 with our dedicated platform.",
 };
 
